@@ -19,80 +19,56 @@
         android:text="@string/my_title"
         android:textAlignment="center"
         android:layout_centerHorizontal="true"
-        android:id="@+id/textView"
+        android:id="@+id/MainScrnTitle"
         style="@style/Base.TextAppearance.AppCompat.Headline" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <Button style="@style/AppLaunchBtn"
         android:text="@string/media_streamer"
-        android:id="@+id/button"
-        android:background="#F08C35"
-        android:minWidth="200dp"
-        android:layout_below="@+id/textView"
+        android:id="@+id/SpotifyStreamerBtn"
+        android:layout_below="@+id/MainScrnTitle"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="38dp"
         android:onClick="launchSpotifyStreamerApp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <Button style="@style/AppLaunchBtn"
         android:text="@string/super_duo1"
-        android:id="@+id/button2"
-        android:layout_below="@+id/button"
-        android:layout_marginTop="12dp"
-        android:layout_alignStart="@+id/button"
-        android:layout_alignEnd="@+id/button"
-        android:background="#F08C35"
+        android:id="@+id/ScoresAppBtn"
+        android:layout_below="@+id/SpotifyStreamerBtn"
+        android:layout_alignStart="@+id/SpotifyStreamerBtn"
+        android:layout_alignEnd="@+id/SpotifyStreamerBtn"
         android:onClick="launchScoresApp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <Button style="@style/AppLaunchBtn"
         android:text="@string/super_duo2"
-        android:id="@+id/button3"
-        android:layout_below="@+id/button2"
-        android:layout_alignStart="@+id/button2"
-        android:layout_marginTop="12dp"
-        android:layout_alignEnd="@+id/button2"
-        android:background="#F08C35"
+        android:id="@+id/LibraryAppBtn"
+        android:layout_below="@+id/ScoresAppBtn"
+        android:layout_alignStart="@+id/ScoresAppBtn"
+        android:layout_alignEnd="@+id/ScoresAppBtn"
         android:onClick="launchLibraryApp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <Button style="@style/AppLaunchBtn"
         android:text="@string/ant_terminator"
-        android:id="@+id/button4"
-        android:background="#F08C35"
-        android:layout_below="@+id/button3"
-        android:layout_alignStart="@+id/button3"
-        android:layout_marginTop="12dp"
-        android:layout_alignEnd="@+id/button3"
+        android:id="@+id/BuildItBiggerBtn"
+        android:layout_below="@+id/LibraryAppBtn"
+        android:layout_alignStart="@+id/LibraryAppBtn"
+        android:layout_alignEnd="@+id/LibraryAppBtn"
         android:onClick="launchBuildItBigger" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <Button style="@style/AppLaunchBtn"
         android:text="@string/materialize"
-        android:id="@+id/button5"
-        android:layout_below="@+id/button4"
-        android:layout_alignStart="@+id/button4"
-        android:layout_marginTop="12dp"
-        android:layout_alignEnd="@+id/button4"
-        android:background="#F08C35"
+        android:id="@+id/XYZReaderBtn"
+        android:layout_below="@+id/BuildItBiggerBtn"
+        android:layout_alignStart="@+id/BuildItBiggerBtn"
+        android:layout_alignEnd="@+id/BuildItBiggerBtn"
         android:onClick="launchXYZReader" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <Button style="@style/AppLaunchBtn"
         android:text="@string/capstone"
-        android:id="@+id/button6"
-        android:layout_below="@+id/button5"
-        android:layout_alignStart="@+id/button5"
-        android:layout_marginTop="12dp"
-        android:layout_alignEnd="@+id/button5"
-        android:background="#e4458a"
-        android:textColor="#ffffff"
-        android:onClick="launchCapstoneApp"
-        android:nestedScrollingEnabled="false" />
+        android:id="@+id/CapstoneAppBtn"
+        android:layout_below="@+id/XYZReaderBtn"
+        android:layout_alignStart="@+id/XYZReaderBtn"
+        android:layout_alignEnd="@+id/XYZReaderBtn"
+        android:background="@color/purpleBtn"
+        android:textColor="#FFFFFF"
+        android:onClick="launchCapstoneApp" />
 </RelativeLayout>
